@@ -11,6 +11,14 @@ rm -rf /var/log/httpd/access
 # 可以给 zip 文件解压到当前文件夹。
 unzip zipped_file.zip
 
+# 查看当前目录下文件数目
+# 1. 查看当前目录下文件个数
+ls -l |grep "^-"|wc -l  
+# 2.查看当前目录下，所以文件个数，包括当前目录下子文件夹中的所以文件。　
+ls -lR|grep "^-"|wc -l 
+# 3.  查看当前目录下文件夹的个数
+ls -lR|grep "^d"|wc -l　（文件夹个数）
+
 # 管理员模式
 # 管理员模式查看各个用户内存使用情况
 du -sh *
