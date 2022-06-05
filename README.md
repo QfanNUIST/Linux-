@@ -20,9 +20,16 @@ ls -lR|grep "^-"|wc -l
 ls -lR|grep "^d"|wc -l　（文件夹个数）
 
 # 管理员模式
+su headoop
 # 管理员模式查看各个用户内存使用情况
 du -sh *
+# 查看可用盘
+sudo fdisk -l
 # linux用户与用户之间传输文件
 scp -r /home/data/MMEW liaoleqing@202.195.239.96:/home/liaoleqing
 # 挂盘
 sudo mount /dev/sdb /home/academy/
+# 建用户
+useradd -m yangyuze -g student -d /home/yangyuze -s /bin/bash
+sudo passwd yangyuye
+
