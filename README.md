@@ -29,6 +29,11 @@ sudo fdisk -l
 scp -r /home/data/MMEW liaoleqing@202.195.239.96:/home/liaoleqing
 # 挂盘
 sudo mount /dev/sdb /home/academy/
+挂上自己的盘
+cd ..
+sudo mkdir lyj_data
+sudo chmod 777 lyj_data/
+sudo mount /dev/sdb lyj_data/
 # 建用户
 useradd -m yangyuze -g student -d /home/yangyuze -s /bin/bash
 sudo passwd yangyuye
