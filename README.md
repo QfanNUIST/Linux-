@@ -38,3 +38,7 @@ sudo mount /dev/sdb lyj_data/
 useradd -m yangyuze -g student -d /home/yangyuze -s /bin/bash
 sudo passwd yangyuye
 
+# 关闭服务器
+shutdown -h now
+# 开启服务器
+reboot
