@@ -42,3 +42,10 @@ sudo passwd yangyuye
 shutdown -h now
 # 开启服务器
 reboot
+# 开机之后挂盘
+98：
+sudo mount /dev/sdb /home/data
+96:
+sudo mount /dev/sdb /home/academy/
+
+
